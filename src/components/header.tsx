@@ -41,13 +41,11 @@ const Header = () => {
             <Link href="/">TeslaLab</Link>
            </div>
            <div className="flex justify-around gap-4">
-            {links.map(linkers => {
-              return (
-                <div key={linkers.id}>
-                  <Link href={linkers.url}>{linkers.title}</Link>
-                </div>
-              )
-            })}
+            {links.map(linkers =>(
+              <div key={linkers.id}>
+                <Link href={linkers.url}>{linkers.title}</Link>
+            </div>
+            ))}
            </div>
         </div>
         {/* Mobile Header with Responsive */}
@@ -62,13 +60,13 @@ const Header = () => {
         <div className="text-2xl">
           {isOpen && 
             <div className={`bg-slate-100 shadow-md rounded-md mt-3 w-52 h-48 p-4 float-right ${isOpen ? "opacity: 100": "opacity: 0"}`}>
-              {links.map(linkers => {
-                return (
+              {links.map(linkers => (
+                
                   <div key={linkers.id}>
                     <Link onClick={imageOpen} href={linkers.url}>{linkers.title}</Link>
                   </div>
-                )
-              })}
+                
+              ))}
             </div>
           }
         </div>
