@@ -43,8 +43,8 @@ const Header = () => {
            <div className="flex justify-around gap-4">
             {links.map(link => {
               return (
-                <div>
-                  <Link key={link.id} href={link.url}>{link.title}</Link>
+                <div key={link.id}>
+                  <Link  href={link.url}>{link.title}</Link>
                 </div>
               )
             })}
@@ -64,8 +64,8 @@ const Header = () => {
             <div className={`bg-slate-100 shadow-md rounded-md mt-3 w-52 h-48 p-4 float-right ${isOpen ? "opacity: 100": "opacity: 0"}`}>
               {links.map(link => {
                 return (
-                  <div>
-                    <Link key={link.id} onClick={imageOpen} href={link.url}>{link.title}</Link>
+                  <div key={link.id}>
+                    <Link  onClick={imageOpen} href={link.url}>{link.title}</Link>
                   </div>
                 )
               })}
