@@ -22,7 +22,7 @@ export default function Home() {
               </div>
               <div>
                 <h1>Content Here</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit ipsum corrupti similique asperiores ad suscipit, perspiciatis quidem reiciendis laborum vel tempore consectetur dignissimos beatae aut consequuntur, sapiente reprehenderit ex. Deleniti.</p>
+                <p>Lorem ipsum lorem appdolor sit amet, consectetur adipisicing elit. Impedit ipsum corrupti similique asperiores ad suscipit, perspiciatis quidem reiciendis laborum vel tempore consectetur dignissimos beatae aut consequuntur, sapiente reprehenderit ex. Deleniti.</p>
               </div>
             </div>
           </div>
