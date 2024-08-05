@@ -44,7 +44,7 @@ const Header = () => {
             {links.map(link => {
               return (
                 <div>
-                  <Link href={link.url}>{link.title}</Link>
+                  <Link key={link.id} href={link.url}>{link.title}</Link>
                 </div>
               )
             })}
@@ -65,7 +65,7 @@ const Header = () => {
               {links.map(link => {
                 return (
                   <div>
-                    <Link onClick={imageOpen} href={link.url}>{link.title}</Link>
+                    <Link key={link.id} onClick={imageOpen} href={link.url}>{link.title}</Link>
                   </div>
                 )
               })}
